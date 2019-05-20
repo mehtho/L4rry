@@ -15,16 +15,7 @@ namespace L4rry.Commands
         public async Task HelloCommand()
         { 
             await Context.Channel.SendMessageAsync("Hello there");
-        }
 
-        [Command("ianpp"), Summary("Live feed of Ian's osu! PP")]
-        public async Task IanPP()
-        {
-            String filePath = SQLiteClass.ProgramFilesx86() + "\\L4rry\\" + "ianpp.jpg";
-            if (File.Exists(filePath))
-            {
-                await Context.Channel.SendFileAsync(filePath);
-            }
         }
     }
 }
