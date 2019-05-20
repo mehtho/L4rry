@@ -37,17 +37,7 @@ namespace L4rry
             Client.Ready += Client_Ready;
             Client.Log += Client_Log;
 
-            string Token = "";
-            try
-            {
-                Token = RegistryAccess.GetToken();
-            }
-            catch (KeyNotFoundException)
-            {
-                return;
-            }
-
-            await Client.LoginAsync(TokenType.Bot, Token);
+            await Client.LoginAsync(TokenType.Bot, File.ReadAllText("C:\\Key.txt"));
             await Client.StartAsync();
 
             await Task.Delay(-1);

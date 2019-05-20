@@ -151,7 +151,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\GetImage.cs" />
-    <Compile Include="Utilities\RegistryAccess.cs" />
     <Compile Include="Utilities\SQLiteClass.cs" />
   </ItemGroup>
   <ItemGroup>
