@@ -37,7 +37,7 @@ namespace L4rry
             Client.Ready += Client_Ready;
             Client.Log += Client_Log;
 
-            await Client.LoginAsync(TokenType.Bot, File.ReadAllText("C:\\Key.txt"));
+            await Client.LoginAsync(TokenType.Bot, File.ReadAllText(path: "C:\\Key.txt"));
             await Client.StartAsync();
 
             await Task.Delay(-1);
