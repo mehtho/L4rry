@@ -150,6 +150,7 @@
   <ItemGroup>
     <Compile Include="Commands\FirstCommand.cs" />
     <Compile Include="Commands\Voting.cs" />
+    <Compile Include="Commands\ian.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\GetImage.cs" />
