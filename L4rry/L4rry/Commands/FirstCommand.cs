@@ -11,7 +11,7 @@ namespace L4rry.Commands
 {
     public class FirstCommand : ModuleBase<SocketCommandContext>
     {
-        [Command("hello"), Alias("hello"), Summary("Hello world command")]
+        [Command("hello"), Alias("hi"), Summary("Hello world command")]
         public async Task HelloCommand()
         { 
             await Context.Channel.SendMessageAsync("Hello there");
