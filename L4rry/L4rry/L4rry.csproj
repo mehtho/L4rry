@@ -152,6 +152,7 @@
     <Compile Include="Commands\ian.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Objects\Reminder.cs" />
     <Compile Include="Utilities\GetImage.cs" />
     <Compile Include="Utilities\SQLiteClass.cs" />
   </ItemGroup>
